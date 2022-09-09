@@ -7,6 +7,12 @@ const config = {
   darkMode: 'class',
   content: ['./src/**/*.{html,scss,ts}', './projects/**/*.{html,scss,ts}'],
   theme: {
+    screens: {
+      sm: '600px',
+      md: '960px',
+      lg: '1280px',
+      xl: '1440px',
+    },
     extend: {},
   },
   plugins: [
