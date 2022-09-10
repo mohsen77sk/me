@@ -61,6 +61,41 @@
     opacity: 1;
     -webkit-text-fill-color: currentColor;
   }
+
+  body,
+  .dark,
+  .light {
+    @apply text-default bg-default #{'!important'};
+  }
+
+  *,
+  *::before,
+  *::after {
+    --tw-border-opacity: 1 !important;
+    border-color: rgba(var(--color-border-rgb), var(--tw-border-opacity));
+
+    .dark & {
+      --tw-border-opacity: 0.12 !important;
+    }
+  }
+
+  [disabled] * {
+    @apply text-disabled #{'!important'};
+  }
+
+  /* Print styles */
+  @media print {
+    /* Make the base font size smaller for print so everything is scaled nicely */
+    html {
+      font-size: 12px !important;
+    }
+
+    body,
+    .dark,
+    .light {
+      background: none !important;
+    }
+  }
 }
 
 /* This injects Tailwind's component classes and any component classes registered by plugins. */
