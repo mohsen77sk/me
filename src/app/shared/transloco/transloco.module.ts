@@ -10,7 +10,6 @@ import {
 } from '@ngneat/transloco';
 import { TranslocoHttpLoader } from './transloco.http-loader';
 import { ConfigService } from '../config';
-import { availableLangs } from 'scoped-translations';
 import { LocaleProvider } from './locale.provider';
 
 import localeEn from '@angular/common/locales/en';
@@ -25,7 +24,16 @@ registerLocaleData(localeFa, 'fa');
       provide: TRANSLOCO_CONFIG,
       deps: [ConfigService],
       useFactory: (configService: ConfigService): TranslocoConfig => ({
-        availableLangs: availableLangs,
+        availableLangs: [
+          {
+            id: 'en',
+            label: 'English',
+          },
+          {
+            id: 'fa',
+            label: 'فارسی',
+          },
+        ],
         defaultLang: configService.config.language,
         fallbackLang: configService.config.language,
         reRenderOnLangChange: true,
