@@ -1,0 +1,62 @@
+<!-- Button -->
+<button
+  mat-icon-button
+  *transloco="let t"
+  [matTooltip]="t('scheme.title')"
+  [matMenuTriggerFor]="scheme"
+  [dir]="config.direction"
+>
+  <ng-container *ngIf="currentScheme === 'dark'">
+    <mat-icon class="material-symbols-rounded icon"> light_mode </mat-icon>
+  </ng-container>
+  <ng-container *ngIf="currentScheme === 'light'">
+    <mat-icon class="material-symbols-rounded icon"> dark_mode </mat-icon>
+  </ng-container>
+</button>
+
+<!-- Scheme menu -->
+<mat-menu [xPosition]="'before'" #scheme="matMenu">
+  <button mat-menu-item (click)="setScheme('auto')">
+    <span class="flex items-center">
+      <mat-icon class="material-symbols-rounded icon"> auto_mode </mat-icon>
+      <span class="mx-3">
+        <ng-container *transloco="let t; read: 'scheme'">
+          {{ t('auto') }}
+        </ng-container>
+      </span>
+    </span>
+  </button>
+  <button mat-menu-item (click)="setScheme('dark')">
+    <span class="flex items-center">
+      <mat-icon class="material-symbols-rounded icon"> dark_mode </mat-icon>
+      <span class="mx-3">
+        <ng-container *transloco="let t; read: 'scheme'">
+          {{ t('dark') }}
+        </ng-container>
+      </span>
+    </span>
+  </button>
+  <button mat-menu-item (click)="setScheme('light')">
+    <span class="flex items-center">
+      <mat-icon class="material-symbols-rounded icon"> light_mode </mat-icon>
+      <span class="mx-3">
+        <ng-container *transloco="let t; read: 'scheme'">
+          {{ t('light') }}
+        </ng-container>
+      </span>
+    </span>
+  </button>
+</mat-menu>
+
+<!-- icon template -->
+<ng-template let-scheme #schemeIcon>
+  <mat-icon class="material-symbols-rounded icon" *ngIf="scheme === 'auto'">
+    auto_mode
+  </mat-icon>
+  <mat-icon class="material-symbols-rounded icon" *ngIf="scheme === 'dark'">
+    dark_mode
+  </mat-icon>
+  <mat-icon class="material-symbols-rounded icon" *ngIf="scheme === 'light'">
+    light_mode
+  </mat-icon>
+</ng-template>
