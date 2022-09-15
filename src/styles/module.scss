@@ -1,8 +1,14 @@
 // Tailwind Base
 @import 'tailwind/base';
 
+// Themes
+@import 'themes';
+
 // Vendors
 @import 'vendors';
+
+// Overrides
+@import 'overrides/angular-material';
 
 // Styles
 @import 'styles';

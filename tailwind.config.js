@@ -32,6 +32,7 @@ const themes = {
 const config = {
   darkMode: 'class',
   content: ['./src/**/*.{html,scss,ts}', './projects/**/*.{html,scss,ts}'],
+  important: true,
   theme: {
     fontFamily: {
       sans: ['IRANSansX', ...defaultTheme.fontFamily.sans],

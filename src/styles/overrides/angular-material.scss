@@ -1,0 +1,270 @@
+/* ----------------------------------------------------------------------------------------------------- */
+/*  @ Buttons
+/* ----------------------------------------------------------------------------------------------------- */
+.mat-button,
+.mat-fab,
+.mat-flat-button,
+.mat-icon-button,
+.mat-mini-fab,
+.mat-raised-button,
+.mat-stroked-button {
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  min-height: 40px;
+  max-height: 40px;
+  line-height: 1 !important;
+
+  .mat-button-wrapper {
+    position: relative;
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    z-index: 2; /* Move mat-button-wrapper above the ripple and focus overlay */
+  }
+
+  .mat-button-focus-overlay,
+  .mat-button-ripple {
+    z-index: 1;
+  }
+
+  /* Large button */
+  &.msk-mat-button-large {
+    height: 48px;
+    min-height: 48px;
+    max-height: 48px;
+  }
+
+  /* Lower the icon opacity on disabled buttons */
+  &.mat-button-disabled {
+    .mat-icon {
+      opacity: 0.38 !important;
+    }
+  }
+}
+
+.mat-fab {
+  max-height: 56px;
+}
+
+/* Button width icon */
+.mat-button,
+.mat-flat-button,
+.mat-raised-button,
+.mat-stroked-button {
+  .mat-button-wrapper {
+    .mat-icon {
+      margin-left: -0.25rem;
+      margin-right: 0.5rem;
+    }
+  }
+}
+
+[dir='rtl'] {
+  .mat-button,
+  .mat-flat-button,
+  .mat-raised-button,
+  .mat-stroked-button {
+    .mat-button-wrapper {
+      .mat-icon {
+        margin-right: -0.25rem;
+        margin-left: 0.5rem;
+      }
+    }
+  }
+}
+
+/* Colored background buttons */
+.mat-flat-button,
+.mat-raised-button,
+.mat-fab,
+.mat-mini-fab {
+  .mat-icon {
+    color: currentColor !important;
+  }
+
+  /* Add hover and focus style on all buttons */
+  .mat-button-focus-overlay {
+    @apply bg-gray-400 bg-opacity-20 dark:bg-black dark:bg-opacity-5 #{!important};
+  }
+
+  /* On palette colored buttons, use a darker color */
+  &.mat-primary,
+  &.mat-accent,
+  &.mat-warn {
+    .mat-button-focus-overlay {
+      background-color: rgba(0, 0, 0, 0.1) !important;
+    }
+  }
+
+  &:hover,
+  &.cdk-keyboard-focused,
+  &.cdk-program-focused {
+    .mat-button-focus-overlay {
+      opacity: 1 !important;
+    }
+  }
+
+  @media (hover: none) {
+    &:hover {
+      .mat-button-focus-overlay {
+        opacity: 0 !important;
+      }
+    }
+  }
+
+  &.mat-button-disabled {
+    .mat-button-focus-overlay {
+      opacity: 0 !important;
+    }
+  }
+}
+
+/* Transparent background buttons */
+.mat-button,
+.mat-icon-button,
+.mat-stroked-button {
+  /* Apply primary color */
+  &.mat-primary:not(.mat-button-disabled) {
+    .mat-icon {
+      @apply text-primary #{!important};
+    }
+  }
+
+  /* Apply accent color */
+  &.mat-accent:not(.mat-button-disabled) {
+    .mat-icon {
+      @apply text-accent #{!important};
+    }
+  }
+
+  /* Apply warn color */
+  &.mat-warn:not(.mat-button-disabled) {
+    .mat-icon {
+      @apply text-warn #{!important};
+    }
+  }
+
+  /* Add hover and focus styles */
+  .mat-button-focus-overlay {
+    @apply bg-gray-400 bg-opacity-20 dark:bg-black dark:bg-opacity-5 #{!important};
+  }
+
+  /* On primary colored buttons, use the primary color as focus overlay */
+  &.mat-primary:not(.mat-button-disabled) {
+    .mat-button-focus-overlay {
+      @apply bg-primary #{!important};
+    }
+  }
+
+  /* On accent colored buttons, use the accent color as focus overlay */
+  &.mat-accent:not(.mat-button-disabled) {
+    .mat-button-focus-overlay {
+      @apply bg-accent #{!important};
+    }
+  }
+
+  /* On warn colored buttons, use the warn color as focus overlay */
+  &.mat-warn:not(.mat-button-disabled) {
+    .mat-button-focus-overlay {
+      @apply bg-warn #{!important};
+    }
+  }
+
+  &.mat-primary:not(.mat-button-disabled),
+  &.mat-accent:not(.mat-button-disabled),
+  &.mat-warn:not(.mat-button-disabled) {
+    &:hover,
+    &.cdk-keyboard-focused,
+    &.cdk-program-focused {
+      .mat-button-focus-overlay {
+        opacity: 0.1 !important;
+      }
+    }
+  }
+
+  &:hover,
+  &.cdk-keyboard-focused,
+  &.cdk-program-focused {
+    .mat-button-focus-overlay {
+      opacity: 1 !important;
+    }
+  }
+
+  @media (hover: none) {
+    &:hover {
+      .mat-button-focus-overlay {
+        opacity: 0 !important;
+      }
+    }
+  }
+
+  &.mat-button-disabled {
+    .mat-button-focus-overlay {
+      opacity: 0 !important;
+    }
+  }
+}
+
+/* ----------------------------------------------------------------------------------------------------- */
+/*  @ Icon
+/* ----------------------------------------------------------------------------------------------------- */
+.mat-icon {
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  min-width: 24px;
+  height: 24px;
+  min-height: 24px;
+  font-size: 24px;
+  line-height: 24px;
+  -webkit-appearance: none !important;
+}
+
+/* ----------------------------------------------------------------------------------------------------- */
+/*  @ Menu
+/* ----------------------------------------------------------------------------------------------------- */
+.mat-menu-panel {
+  min-width: 144px !important;
+
+  .mat-menu-content {
+    .mat-menu-item {
+      display: flex;
+      align-items: center;
+
+      &.mat-menu-item-submenu-trigger {
+        padding-right: 40px;
+      }
+
+      .mat-icon {
+        margin-right: 12px;
+      }
+    }
+
+    /* Divider within mat-menu */
+    mat-divider {
+      margin: 8px 0;
+    }
+  }
+}
+
+[dir='rtl'] {
+  .mat-menu-panel {
+    .mat-menu-content {
+      .mat-menu-item {
+        &.mat-menu-item-submenu-trigger {
+          padding-left: 40px;
+          padding-right: 0;
+        }
+
+        .mat-icon {
+          margin-left: 12px;
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}
