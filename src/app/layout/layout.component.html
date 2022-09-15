@@ -1,5 +1,19 @@
 <!-- Wrapper -->
 <div class="flex w-full flex-auto flex-col">
+  <!-- Header -->
+  <div
+    class="bg-card relative z-49 flex h-14 w-full flex-0 items-center justify-between px-4 shadow dark:border-b dark:bg-transparent dark:shadow-none print:hidden sm:h-16 md:px-6"
+  >
+    <!-- Title -->
+    <div class="flex"></div>
+    <!-- Components -->
+    <div
+      class="flex items-center space-x-0.5 px-2 rtl:space-x-reverse md:space-x-1"
+    >
+      <app-languages></app-languages>
+    </div>
+  </div>
+
   <!-- Content -->
   <div class="flex flex-auto flex-col">
     <!-- *ngIf="true" hack is required here for router-outlet to work correctly.
