@@ -1,0 +1,26 @@
+<!-- Button -->
+<button
+  mat-icon-button
+  *transloco="let t"
+  [matTooltip]="t('theme.title')"
+  [matMenuTriggerFor]="theme"
+  [dir]="config.direction"
+>
+  <mat-icon class="material-symbols-rounded icon"> palette </mat-icon>
+</button>
+
+<!-- Theme menu -->
+<mat-menu [xPosition]="'before'" #theme="matMenu">
+  <ng-container *ngFor="let item of config.themes">
+    <button mat-menu-item [ngClass]="item.id" (click)="setTheme(item.id)">
+      <span class="flex items-center">
+        <div class="h-3 w-3 flex-0 rounded-full bg-primary"></div>
+        <span class="mx-3">
+          <ng-container *transloco="let t; read: 'theme'">
+            {{ t(item.name.toLowerCase()) }}
+          </ng-container>
+        </span>
+      </span>
+    </button>
+  </ng-container>
+</mat-menu>

@@ -15,4 +15,22 @@ export const layoutConfig: LayoutConfig = {
   },
   scheme: 'light',
   theme: 'theme-default',
+  themes: [
+    {
+      id: 'theme-default',
+      name: 'Default',
+    },
+    {
+      id: 'theme-teal',
+      name: 'Teal',
+    },
+    {
+      id: 'theme-purple',
+      name: 'Purple',
+    },
+    {
+      id: 'theme-amber',
+      name: 'Amber',
+    },
+  ],
 };
