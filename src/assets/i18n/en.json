@@ -1,1 +1,24 @@
-{}
+{
+  "languages": "Languages",
+  "scheme": {
+    "title": "Scheme",
+    "auto": "Auto",
+    "dark": "Dark",
+    "light": "Light"
+  },
+  "theme": {
+    "title": "Theme",
+    "default": "Default",
+    "teal": "Teal",
+    "purple": "Purple",
+    "amber": "Amber"
+  },
+  "resume": {
+    "work-experiences": "Work Experiences",
+    "educations": "Educations",
+    "skills": "Skills",
+    "technical": "Technical",
+    "professional": "Professional",
+    "languages": "Languages"
+  }
+}

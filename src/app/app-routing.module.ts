@@ -4,10 +4,18 @@ import { RouterModule, Routes } from '@angular/router';
 import { LayoutComponent } from './layout';
 
 const routes: Routes = [
+  // Redirect empty path to '/resume'
+  { path: '', pathMatch: 'full', redirectTo: 'resume' },
   {
     path: '',
     component: LayoutComponent,
-    children: [],
+    children: [
+      {
+        path: 'resume',
+        loadChildren: () =>
+          import('./modules/resume/resume.module').then((m) => m.ResumeModule),
+      },
+    ],
   },
 ];
 

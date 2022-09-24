@@ -1,1 +1,24 @@
-{}
+{
+  "languages": "زبان سیستم",
+  "scheme": {
+    "title": "حالت",
+    "auto": "خودکار",
+    "dark": "تاریک",
+    "light": "روشن"
+  },
+  "theme": {
+    "title": "قالب",
+    "default": "پیش فرض",
+    "teal": "سبز آبی",
+    "purple": "بنفش",
+    "amber": "کهربایی"
+  },
+  "resume": {
+    "work-experiences": "سوابق شغلی",
+    "educations": "سوابق تحصیلی",
+    "skills": "مهارت ها",
+    "technical": "فنی",
+    "professional": "حرفه ای",
+    "languages": "زبان ها"
+  }
+}
