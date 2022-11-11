@@ -110,6 +110,42 @@
                   </div>
                 </div>
               </ng-container>
+
+              <!-- Projects -->
+              <ng-container *ngIf="data.projects && data.projects.length > 0">
+                <div class="work-section py-4">
+                  <h3
+                    class="relative mb-6 border-primary-500 text-lg font-bold uppercase tracking-wider text-primary-500 ltr:border-l-8 ltr:pl-4 rtl:border-r-8 rtl:pr-4"
+                  >
+                    <ng-container *transloco="let t; read: 'resume'">
+                      {{ t('projects') }}
+                    </ng-container>
+                  </h3>
+                  <div class="mb-4" *ngFor="let proj of data.projects">
+                    <!-- header -->
+                    <div
+                      class="mb-2 flex flex-col sm:flex-row sm:items-center sm:justify-between"
+                    >
+                      <h4 class="text-base font-bold">
+                        <a [href]="proj.link" target="_blank">
+                          {{ proj.title }}
+                        </a>
+                      </h4>
+                      <div class="text-secondary text-xs">
+                        {{ proj.status }}
+                      </div>
+                    </div>
+
+                    <!-- content -->
+                    <div>
+                      <p
+                        class="mb-4 whitespace-pre-line text-justify"
+                        [innerHtml]="generateSafeHtml(proj.description)"
+                      ></p>
+                    </div>
+                  </div>
+                </div>
+              </ng-container>
             </div>
 
             <!-- Aside -->
@@ -223,7 +259,7 @@
           >
             <ng-container *ngFor="let item of data.social">
               <a
-                class="group text-secondary flex items-center space-x-2 text-xs hover:text-default rtl:md:space-x-reverse"
+                class="group text-secondary flex items-center space-x-2 text-xs hover:text-default rtl:space-x-reverse"
                 [href]="'https://' + item.value"
                 target="_blank"
               >

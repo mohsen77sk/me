@@ -4,6 +4,7 @@ export interface Resume {
   professionalTitle: string;
   about: string;
   workExperiences: ResumeWorkExperiences[];
+  projects: ResumeProjects[];
   educations: ResumeEducation[];
   technicalSkills: string[];
   professionalSkills: string[];
@@ -19,6 +20,13 @@ export interface ResumeWorkExperiences {
   endDate: string;
   description: string;
   tasks: string[];
+}
+
+export interface ResumeProjects {
+  title: string;
+  status: string;
+  link: string;
+  description: string;
 }
 
 export interface ResumeLanguage {
