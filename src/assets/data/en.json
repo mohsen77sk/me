@@ -9,24 +9,44 @@
       "place": "Hooshmand Risk Iranian",
       "startDate": "2021",
       "endDate": "Present",
-      "description": "description",
-      "tasks": ["task 1", "task 2"]
+      "description": "",
+      "tasks": [
+        "Software development for open banking services.",
+        "Working knowledge of Docker and using it in projects.",
+        "Software development using web socket protocol.",
+        "Development of several web applications with the concept of Monorepos and using the Nx framework.",
+        "Remote work experience due to the Corona situation.",
+        "Using Jira as a project management tool."
+      ]
     },
     {
       "title": "Front-End Developer",
       "place": "Shaygan Tadbir Parsian",
       "startDate": "2019",
       "endDate": "2021",
-      "description": "description",
-      "tasks": ["task 1", "task 2"]
+      "description": "",
+      "tasks": [
+        "Enterprise application development and familiarity with departments such as accounting, sales, warehousing, production, and so on.",
+        "Development of a dynamic form builder.",
+        "Development of a dynamic reporting system.",
+        "Development and implementation of PWA web application.",
+        "Access level implementation in a web application using directives and guards.",
+        "Worked on multiple small and large projects at the same time.",
+        "Making old web applications responsive.",
+        "Using Azure DevOps as a project management tool."
+      ]
     },
     {
       "title": "Full-stack Developer",
       "place": "Freelancer",
       "startDate": "2017",
       "endDate": "2019",
-      "description": "description",
-      "tasks": ["task 1", "task 2"]
+      "description": "",
+      "tasks": [
+        "Experience working with ASP.net language in the form of MVC and Rest api.",
+        "Experience working with SQL Server and MySql databases.",
+        "Software development as Code first."
+      ]
     }
   ],
   "projects": [
