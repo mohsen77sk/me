@@ -24,8 +24,8 @@ const themes = {
       500: colors.red['50'],
     },
   },
-  // Rest of the themes will use the 'default' as the base theme
-  // and extend them with their given configuration
+  // Rest of the themes will use the 'default' as the base
+  // theme and extend it with their given configuration
   teal: {
     primary: {
       ...colors.teal,
