@@ -2,7 +2,7 @@
   "name": "Mohsen Sohrabi",
   "image": "assets/images/avatars/mohsen-sohrabi.jpg",
   "professionalTitle": "Mid-level Front-End Developer",
-  "about": "Has more than 5 years of experience in developing User Interface (UI) Applications and professional web applications using HTML5, CSS3, JavaScript/TypeScript and Angular frame work and libraries such as (AngularMaterial, SASS, Rxjs, Ag-Grid, ApexCharts, XLSX, TailwindCSS). Experience working with collaboration and issue tracking tools such as Jira, TFS and Solid understanding of team development and the use of GIT as the development repository. \n Familiar with the concept of Monorepos and work experience with the NX framework.",
+  "about": "Has more than 5 years of experience in developing User Interface (UI) Applications and professional web applications using HTML5, CSS3, JavaScript/TypeScript and Angular framework and libraries such as (AngularMaterial, SASS, Rxjs, Ag-Grid, ApexCharts, XLSX, TailwindCSS). Experience working with collaboration and issue tracking tools such as Jira, TFS and Solid understanding of team development and the use of GIT as the development repository. \n Familiar with the concept of Monorepos and work experience with the NX framework.",
   "workExperiences": [
     {
       "title": "Front-End Developer",
@@ -88,16 +88,43 @@
     "TailwindCSS",
     "Photoshop CC"
   ],
-  "professionalSkills": ["PWA", "Responsive Design", "Teamwork", "Scrum"],
+  "professionalSkills": [
+    "PWA",
+    "Responsive Design",
+    "Teamwork",
+    "Scrum"
+  ],
   "languages": [
-    { "title": "Persian", "grade": "Native" },
-    { "title": "English", "grade": "Professional" }
+    {
+      "title": "Persian",
+      "grade": "Native"
+    },
+    {
+      "title": "English",
+      "grade": "Professional"
+    }
   ],
   "contact": [
-    { "name": "phone", "value": "+98 (935) 415-8732", "icon": "call" },
-    { "name": "email", "value": "mohsen77sk@gmail.com", "icon": "mail" },
-    { "name": "website", "value": "mohsen-sohrabi.com", "icon": "language" },
-    { "name": "city", "value": "Iran, Tehran", "icon": "location_on" }
+    {
+      "name": "phone",
+      "value": "+98 (935) 415-8732",
+      "icon": "call"
+    },
+    {
+      "name": "email",
+      "value": "mohsen77sk@gmail.com",
+      "icon": "mail"
+    },
+    {
+      "name": "website",
+      "value": "mohsen-sohrabi.com",
+      "icon": "language"
+    },
+    {
+      "name": "city",
+      "value": "Iran, Tehran",
+      "icon": "location_on"
+    }
   ],
   "social": [
     {

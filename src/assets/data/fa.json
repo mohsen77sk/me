@@ -15,7 +15,7 @@
         "توسعه ی نرم افزار با استفاده از پروتوکل web socket.",
         "توسعه  چند وب اپلیکیشن با مفهموم Monorepos و با استفاده از فریم ورک Nx.",
         "تجربه ی کار با Docker و استفاده از آن در پروژه ها.",
-        "تجربه ی کار به صورت ریموت و دورکاری بخاطر شرایط کورونا.",
+        "تجربه ی کار به صورت ریموت و دورکاری بخاطر شرایط کرونا.",
         "کار با ابزار مدیریت پروژه Jira."
       ]
     },
@@ -88,16 +88,43 @@
     "TailwindCSS",
     "Photoshop CC"
   ],
-  "professionalSkills": ["PWA", "Responsive Design", "Teamwork", "Scrum"],
+  "professionalSkills": [
+    "PWA",
+    "Responsive Design",
+    "Teamwork",
+    "Scrum"
+  ],
   "languages": [
-    { "title": "فارسی", "grade": "زبان مادری" },
-    { "title": "انگلیسی", "grade": "حرفه ای" }
+    {
+      "title": "فارسی",
+      "grade": "زبان مادری"
+    },
+    {
+      "title": "انگلیسی",
+      "grade": "حرفه ای"
+    }
   ],
   "contact": [
-    { "name": "phone", "value": "0935-415-8732", "icon": "call" },
-    { "name": "email", "value": "mohsen77sk@gmail.com", "icon": "mail" },
-    { "name": "website", "value": "mohsen-sohrabi.com", "icon": "language" },
-    { "name": "city", "value": "Iran, Tehran", "icon": "location_on" }
+    {
+      "name": "phone",
+      "value": "0935-415-8732",
+      "icon": "call"
+    },
+    {
+      "name": "email",
+      "value": "mohsen77sk@gmail.com",
+      "icon": "mail"
+    },
+    {
+      "name": "website",
+      "value": "mohsen-sohrabi.com",
+      "icon": "language"
+    },
+    {
+      "name": "city",
+      "value": "Iran, Tehran",
+      "icon": "location_on"
+    }
   ],
   "social": [
     {
