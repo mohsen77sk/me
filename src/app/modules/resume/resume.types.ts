@@ -16,6 +16,7 @@ export interface Resume {
 export interface ResumeWorkExperiences {
   title: string;
   place: string;
+  employmentType: string;
   startDate: string;
   endDate: string;
   description: string;
@@ -35,7 +36,8 @@ export interface ResumeLanguage {
 }
 
 export interface ResumeEducation {
-  title: string;
+  fieldOfStudy: string;
+  degree: string;
   place: string;
   startDate: string;
   endDate: string;

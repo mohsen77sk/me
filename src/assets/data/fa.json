@@ -6,8 +6,9 @@
   "workExperiences": [
     {
       "title": "Front-End Developer",
-      "place": "مدیریت ریسک هوشمند ایرانیان",
-      "startDate": "1400",
+      "place": "مدیریت ریسک هوشمند ایرانیان | تهران",
+      "employmentType": "تمام وقت",
+      "startDate": "تیر 1400",
       "endDate": "حالا",
       "description": "",
       "tasks": [
@@ -21,9 +22,10 @@
     },
     {
       "title": "Front-End Developer",
-      "place": " شایگان تدبیر پارسیان",
-      "startDate": "1397",
-      "endDate": "1400",
+      "place": "شایگان تدبیر پارسیان | تهران",
+      "employmentType": "تمام وقت",
+      "startDate": "بهمن 1397",
+      "endDate": "خرداد 1400",
       "description": "",
       "tasks": [
         "توسعه نرم افزارهای سازمانی (Enterprise Applications) و آشنا با بخش هایی همچون حسابداری، خرانه داری، فروش، انبار داری، تولید و ...",
@@ -38,14 +40,15 @@
     },
     {
       "title": "Full-stack Developer",
-      "place": " فریلنسر",
+      "place": "",
+      "employmentType": "فریلنسر",
       "startDate": "1395",
       "endDate": "1397",
       "description": "",
       "tasks": [
+        "تجربه کار با زبان های HTML, CSS, Javascript.",
         "تجربه کار با زبان ASP.net به صورت MVC و Rest api.",
-        "تجربه ی کار با دیتابیس های SQL Server و MySql.",
-        "توسعه نرم افزار به صورت Code first."
+        "تجربه ی کار با دیتابیس های SQL Server و MySql."
       ]
     }
   ],
@@ -65,13 +68,15 @@
   ],
   "educations": [
     {
-      "title": "فناوری اطلاعات",
+      "fieldOfStudy": "فناوری اطلاعات",
+      "degree": "کارشناسی",
       "place": "علمی کاربردی فناوری اطلاعات شهرداری تهران",
       "startDate": "1394",
       "endDate": "1395"
     },
     {
-      "title": "مهندس نرم افزار",
+      "fieldOfStudy": "مهندس نرم افزار",
+      "degree": "فوق دیپلم",
       "place": "دانشگاه آزاد اسلامى واحد پرند",
       "startDate": "1390",
       "endDate": "1393"

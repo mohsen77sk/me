@@ -6,8 +6,9 @@
   "workExperiences": [
     {
       "title": "Front-End Developer",
-      "place": "Hooshmand Risk Iranian",
-      "startDate": "2021",
+      "place": "Hooshmand Risk Iranian | Tehran, Iran",
+      "employmentType": "Full-time",
+      "startDate": "Jun 2021",
       "endDate": "Present",
       "description": "",
       "tasks": [
@@ -21,9 +22,10 @@
     },
     {
       "title": "Front-End Developer",
-      "place": "Shaygan Tadbir Parsian",
-      "startDate": "2019",
-      "endDate": "2021",
+      "place": "Shaygan Tadbir Parsian | Tehran, Iran",
+      "employmentType": "Full-time",
+      "startDate": "Jan 2019",
+      "endDate": "Jun 2021",
       "description": "",
       "tasks": [
         "Enterprise application development and familiarity with departments such as accounting, sales, warehousing, production, and so on.",
@@ -38,14 +40,15 @@
     },
     {
       "title": "Full-stack Developer",
-      "place": "Freelancer",
+      "place": "",
+      "employmentType": "Freelancer",
       "startDate": "2017",
       "endDate": "2019",
       "description": "",
       "tasks": [
+        "Experience working with HTML, CSS, Javascript.",
         "Experience working with ASP.net language in the form of MVC and Rest api.",
-        "Experience working with SQL Server and MySql databases.",
-        "Software development as Code first."
+        "Experience working with SQL Server and MySql databases."
       ]
     }
   ],
@@ -65,13 +68,15 @@
   ],
   "educations": [
     {
-      "title": "Information Technology",
+      "fieldOfStudy": "Information Technology",
+      "degree": "Bachelor's degree",
       "place": "University of Applied Sciences & Technology",
       "startDate": "2014",
       "endDate": "2016"
     },
     {
-      "title": "Software Engineer",
+      "fieldOfStudy": "Software Engineer",
+      "degree": "Associate Degree",
       "place": "Islamic Azad University, Parand Branch",
       "startDate": "2011",
       "endDate": "2014"

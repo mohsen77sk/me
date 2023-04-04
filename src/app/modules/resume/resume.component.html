@@ -84,10 +84,19 @@
                     <div
                       class="mb-2 flex flex-col sm:flex-row sm:items-center sm:justify-between"
                     >
-                      <h4 class="text-base font-bold">{{ work.title }}</h4>
+                      <div>
+                        <h4 class="text-base font-bold">
+                          {{ work.title }}
+                          <span class="text-secondary text-sm">
+                            {{ ' - ' + work.employmentType }}
+                          </span>
+                        </h4>
+                        <div class="text-secondary">
+                          {{ work.place }}
+                        </div>
+                      </div>
                       <div class="text-secondary text-xs">
-                        {{ work.place }} | {{ work.startDate }} -
-                        {{ work.endDate }}
+                        {{ work.startDate }} - {{ work.endDate }}
                       </div>
                     </div>
 
@@ -217,11 +226,16 @@
                     </ng-container>
                   </h3>
                   <ul>
-                    <li class="mb-2" *ngFor="let lang of data.educations">
-                      <div class="">{{ lang.title }}</div>
-                      <div class="text-secondary">{{ lang.place }}</div>
+                    <li class="mb-2" *ngFor="let education of data.educations">
+                      <div class="">{{ education.place }}</div>
+                      <div class="text-secondary">
+                        <span *ngIf="education.degree">
+                          {{ education.degree }} -
+                        </span>
+                        <span>{{ education.fieldOfStudy }}</span>
+                      </div>
                       <div class="text-secondary text-xs">
-                        {{ lang.startDate }} - {{ lang.endDate }}
+                        {{ education.startDate }} - {{ education.endDate }}
                       </div>
                     </li>
                   </ul>
