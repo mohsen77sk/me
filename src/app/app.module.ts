@@ -8,6 +8,7 @@ import { ConfigModule } from './shared/config';
 import { MediaWatcherModule } from './shared/media-watcher';
 import { SplashScreenModule } from './shared/splash-screen';
 import { AppTranslocoModule } from './shared/transloco';
+import { PlatformModule } from './shared/platform';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -24,6 +25,7 @@ import { AppComponent } from './app.component';
     MediaWatcherModule,
     SplashScreenModule,
     AppTranslocoModule,
+    PlatformModule,
 
     // Layout module of your application
     LayoutModule,
