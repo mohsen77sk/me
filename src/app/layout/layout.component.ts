@@ -4,10 +4,12 @@ import {
   Inject,
   OnDestroy,
   OnInit,
+  Renderer2,
   ViewEncapsulation,
 } from '@angular/core';
 import { combineLatest, map, Subject, takeUntil } from 'rxjs';
 import { ConfigService } from '../shared/config';
+import { PlatformService } from '../shared/platform';
 import { MediaWatcherService } from '../shared/media-watcher';
 import {
   LayoutConfig,
@@ -36,7 +38,9 @@ export class LayoutComponent implements OnInit, OnDestroy {
    */
   constructor(
     @Inject(DOCUMENT) private _document: any,
+    private _renderer2: Renderer2,
     private _configService: ConfigService,
+    private _platformService: PlatformService,
     private _mediaWatcherService: MediaWatcherService
   ) {}
 
@@ -95,6 +99,9 @@ export class LayoutComponent implements OnInit, OnDestroy {
         // Update the layout direction
         this._updateLayoutDirection();
       });
+
+    // Set the OS name
+    this._renderer2.addClass(this._document.body, this._platformService.osName);
   }
 
   /**
