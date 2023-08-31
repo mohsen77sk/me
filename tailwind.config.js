@@ -192,7 +192,6 @@ const config = {
     require(path.resolve(__dirname, './src/tailwind-preset/plugins/theming'))({
       themes,
     }),
-    require('@tailwindcss/aspect-ratio'),
     require('@tailwindcss/typography'),
     require('@tailwindcss/line-clamp'),
   ],
