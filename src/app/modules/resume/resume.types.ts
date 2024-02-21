@@ -5,6 +5,7 @@ export interface Resume {
   about: string;
   workExperiences: ResumeWorkExperiences[];
   projects: ResumeProjects[];
+  licenses: ResumeLicense[];
   educations: ResumeEducation[];
   technicalSkills: string[];
   professionalSkills: string[];
@@ -28,6 +29,13 @@ export interface ResumeProjects {
   status: string;
   link: string;
   description: string;
+}
+
+export interface ResumeLicense {
+  title: string;
+  organization: string;
+  date: string;
+  link: string;
 }
 
 export interface ResumeLanguage {

@@ -44,6 +44,7 @@
           <div class="flex flex-col items-center py-4 md:flex-row">
             <div
               class="relative mb-4 h-32 w-32 flex-0 md:mb-0 ltr:md:mr-8 rtl:md:ml-8"
+              *ngIf="data.image"
             >
               <img
                 alt="Avatar"
@@ -151,6 +152,38 @@
                         class="mb-4 whitespace-pre-line text-justify"
                         [innerHtml]="generateSafeHtml(proj.description)"
                       ></p>
+                    </div>
+                  </div>
+                </div>
+              </ng-container>
+
+              <!-- Licenses -->
+              <ng-container *ngIf="data.licenses && data.licenses.length > 0">
+                <div class="work-section py-4">
+                  <h3
+                    class="relative mb-6 border-primary-500 text-lg font-bold uppercase tracking-wider text-primary-500 ltr:border-l-8 ltr:pl-4 rtl:border-r-8 rtl:pr-4"
+                  >
+                    <ng-container *transloco="let t; read: 'resume'">
+                      {{ t('licenses') }}
+                    </ng-container>
+                  </h3>
+                  <div class="mb-4" *ngFor="let proj of data.licenses">
+                    <div
+                      class="mb-2 flex flex-col sm:flex-row sm:items-center sm:justify-between"
+                    >
+                      <div>
+                        <h4 class="text-base font-bold">
+                          <a [href]="proj.link.length > 0 ? proj.link : '#'" target="_blank">
+                            {{ proj.title }}
+                          </a>
+                        </h4>
+                        <div class="text-base">
+                          {{ proj.organization }}
+                        </div>
+                      </div>
+                      <div class="text-secondary text-xs">
+                        {{ proj.date }}
+                      </div>
                     </div>
                   </div>
                 </div>
