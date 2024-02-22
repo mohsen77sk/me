@@ -8,19 +8,19 @@
       <ng-container *ngIf="!isLoading; else loading">
         <!-- Header -->
         <div class="resume-header">
-          <div class="grid grid-cols-1 md:grid-cols-4 md:gap-8">
+          <div class="grid grid-cols-1 md:grid-cols-4 md:gap-8 print:grid-cols-4 print:gap-6">
             <!-- resume-title -->
             <div class="col-span-3">
               <h2 class="text-4xl font-extrabold uppercase text-primary-500">
                 {{ data.name }}
               </h2>
-              <h4 class="mb-4 text-lg font-light md:mb-0">
+              <h4 class="mb-4 text-lg font-light md:mb-0 print:mb-0">
                 {{ data.professionalTitle }}
               </h4>
             </div>
 
             <!-- resume-contact -->
-            <div class="space-y-2 md:px-2 ltr:md:border-l rtl:md:border-r">
+            <div class="space-y-2 md:px-2 ltr:md:border-l rtl:md:border-r print:px-2 ltr:print:border-l rtl:print:border-r">
               <ng-container *ngFor="let item of data.contact">
                 <div
                   class="flex items-center space-x-2 text-xs rtl:space-x-reverse"
@@ -41,9 +41,9 @@
 
         <!-- Intro -->
         <div class="resume-intro">
-          <div class="flex flex-col items-center py-4 md:flex-row">
+          <div class="flex flex-col items-center py-4 md:flex-row print:flex-row">
             <div
-              class="relative mb-4 h-32 w-32 flex-0 md:mb-0 ltr:md:mr-8 rtl:md:ml-8"
+              class="relative mb-4 h-32 w-32 flex-0 md:mb-0 ltr:md:mr-8 rtl:md:ml-8 print:mb-0 ltr:print:mr-8 rtl:print:ml-8"
               *ngIf="data.image"
             >
               <img
@@ -65,7 +65,7 @@
 
         <!-- Body -->
         <div class="resume-body">
-          <div class="grid grid-cols-1 md:grid-cols-4 md:gap-8">
+          <div class="grid grid-cols-1 md:grid-cols-4 md:gap-8 print:grid-cols-4 print:gap-6">
             <!-- Main -->
             <div class="resume-main col-span-3">
               <!-- Work experiences -->
@@ -195,7 +195,7 @@
 
             <!-- Aside -->
             <div
-              class="resume-aside ltr:md:border-l ltr:md:pl-4 rtl:md:border-r rtl:md:pr-4"
+              class="resume-aside ltr:md:border-l ltr:md:pl-4 rtl:md:border-r rtl:md:pr-4 ltr:print:border-l ltr:print:pl-4 rtl:print:border-r rtl:print:pr-4"
             >
               <!-- Skills -->
               <ng-container
@@ -304,7 +304,7 @@
         <!-- Footer -->
         <div class="resume-footer">
           <div
-            class="flex flex-col space-y-2 md:flex-row md:justify-center md:space-y-0 md:space-x-4 rtl:md:space-x-reverse"
+            class="flex flex-col space-y-2 md:flex-row md:justify-center md:space-y-0 md:space-x-4 rtl:md:space-x-reverse print:flex-row print:justify-center print:space-y-0 print:space-x-4 rtl:print:space-x-reverse"
           >
             <ng-container *ngFor="let item of data.social">
               <a
