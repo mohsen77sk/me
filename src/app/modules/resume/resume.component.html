@@ -173,7 +173,10 @@
                     >
                       <div>
                         <h4 class="text-base font-bold">
-                          <a [href]="proj.link.length > 0 ? proj.link : '#'" target="_blank">
+                          <a
+                            [href]="proj.link.length > 0 ? proj.link : '#'"
+                            target="_blank"
+                          >
                             {{ proj.title }}
                           </a>
                         </h4>
@@ -197,10 +200,9 @@
               <!-- Skills -->
               <ng-container
                 *ngIf="
-                  data.technicalSkills &&
-                  data.technicalSkills.length > 0 &&
-                  data.professionalSkills &&
-                  data.professionalSkills.length > 0
+                  (data.technicalSkills && data.technicalSkills.length > 0) ||
+                  (data.professionalSkills &&
+                    data.professionalSkills.length > 0)
                 "
               >
                 <div class="skills-section py-4">
