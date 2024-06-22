@@ -6,10 +6,23 @@
   "workExperiences": [
     {
       "title": "Front-End Developer",
+      "place": "Tosee Zirsakht | Tehran, Iran",
+      "employmentType": "Full-time",
+      "startDate": "Mar 2024",
+      "endDate": "Present",
+      "description": "",
+      "tasks": [
+        "Experience in writing technical documentation, guides, documents related to the project.",
+        "Experience working with CI/CD pipeline in Azure DevOps.",
+        "Using Azure DevOps as a project management tool."
+      ]
+    },
+    {
+      "title": "Front-End Developer",
       "place": "Hooshmand Risk Iranian | Tehran, Iran",
       "employmentType": "Full-time",
       "startDate": "Jun 2021",
-      "endDate": "Present",
+      "endDate": "Mar 2024",
       "description": "",
       "tasks": [
         "Software development for open banking services.",
@@ -93,12 +106,7 @@
     "TailwindCSS",
     "Photoshop CC"
   ],
-  "professionalSkills": [
-    "PWA",
-    "Responsive Design",
-    "Teamwork",
-    "Scrum"
-  ],
+  "professionalSkills": ["PWA", "Responsive Design", "Teamwork", "Scrum"],
   "languages": [
     {
       "title": "Persian",
@@ -121,14 +129,14 @@
       "icon": "mail"
     },
     {
-      "name": "website",
-      "value": "mohsen-sohrabi.com",
-      "icon": "language"
-    },
-    {
       "name": "city",
       "value": "Iran, Tehran",
       "icon": "location_on"
+    },
+    {
+      "name": "Birthday",
+      "value": "December, 1993",
+      "icon": "cake"
     }
   ],
   "social": [
