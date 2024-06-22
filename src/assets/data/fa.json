@@ -6,14 +6,27 @@
   "workExperiences": [
     {
       "title": "Front-End Developer",
-      "place": "مدیریت ریسک هوشمند ایرانیان | تهران",
+      "place": "توسعه ی زیرساخت نیرو | تهران",
       "employmentType": "تمام وقت",
-      "startDate": "تیر 1400",
+      "startDate": "بهمن 1402",
       "endDate": "حالا",
       "description": "",
       "tasks": [
+        "تجربه ی نوشتن مستندات فنی، راهنماها، داکیومنت های مرتبط با پروژه‌.",
+        "تجربه ی کار با CI/CD pipeline در محیط Azure DevOps.",
+        "کار با ابزار مدیریت پروژه Azure DevOps."
+      ]
+    },
+    {
+      "title": "Front-End Developer",
+      "place": "مدیریت ریسک هوشمند ایرانیان | تهران",
+      "employmentType": "تمام وقت",
+      "startDate": "تیر 1400",
+      "endDate": "بهمن 1402",
+      "description": "",
+      "tasks": [
         "توسعه نرم افزار خدمات بانکداری باز.",
-        "توسعه ی نرم افزار با استفاده از پروتوکل web socket.",
+        "توسعه ی نرم افزار با استفاده از پروتکل web socket.",
         "توسعه  چند وب اپلیکیشن با مفهموم Monorepos و با استفاده از فریم ورک Nx.",
         "تجربه ی کار با Docker و استفاده از آن در پروژه ها.",
         "تجربه ی کار به صورت ریموت و دورکاری بخاطر شرایط کرونا.",
@@ -93,12 +106,7 @@
     "TailwindCSS",
     "Photoshop CC"
   ],
-  "professionalSkills": [
-    "PWA",
-    "Responsive Design",
-    "Teamwork",
-    "Scrum"
-  ],
+  "professionalSkills": ["PWA", "Responsive Design", "Teamwork", "Scrum"],
   "languages": [
     {
       "title": "فارسی",
@@ -121,14 +129,14 @@
       "icon": "mail"
     },
     {
-      "name": "website",
-      "value": "mohsen-sohrabi.com",
-      "icon": "language"
-    },
-    {
       "name": "city",
       "value": "Iran, Tehran",
       "icon": "location_on"
+    },
+    {
+      "name": "Birthday",
+      "value": "دی 1372",
+      "icon": "cake"
     }
   ],
   "social": [
