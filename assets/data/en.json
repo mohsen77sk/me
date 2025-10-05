@@ -2,14 +2,26 @@
   "name": "Mohsen Sohrabi",
   "image": "assets/images/avatars/mohsen-sohrabi.jpg",
   "professionalTitle": "Front-End Developer",
-  "about": "Has more than 7 years of experience in developing User Interface (UI) Applications and professional web applications using HTML5, CSS3, JavaScript/TypeScript and Angular framework and libraries such as (AngularMaterial, SASS, Rxjs, Ag-Grid, ApexCharts, XLSX, TailwindCSS). Experience working with collaboration and issue tracking tools such as Jira, TFS and Solid understanding of team development and the use of GIT as the development repository. \n Familiar with the concept of Monorepos and work experience with the NX framework.",
+  "about": "Front-end developer with over 7 years of experience in designing and implementing web applications using Angular and TypeScript. Proficient in HTML, CSS (SASS), RxJS, and libraries such as Angular Material, Ag-Grid, and ApexCharts. Familiar with Monorepo architecture using NX, and experienced with Git, Jira, and Azure DevOps.",
   "workExperiences": [
+    {
+      "title": "Front-End Developer",
+      "place": "Rahkarhay jame Ershan | Tehran, Iran",
+      "employmentType": "Full-time",
+      "startDate": "Feb 2025",
+      "endDate": "Present",
+      "description": "",
+      "tasks": [
+        "Experience working on a stock brokerage platform project.",
+        "Experience in designing and implementing a cross-platform socket management service with automatic failover to a backup service in case of disconnection."
+      ]
+    },
     {
       "title": "Front-End Developer",
       "place": "Tosee Zirsakht | Tehran, Iran",
       "employmentType": "Full-time",
       "startDate": "Mar 2024",
-      "endDate": "Present",
+      "endDate": "Feb 2025",
       "description": "",
       "tasks": [
         "Experience in writing technical documentation, guides, documents related to the project.",
@@ -96,15 +108,21 @@
     }
   ],
   "technicalSkills": [
-    "HTML5",
-    "CSS3-SASS",
-    "JavaScript",
+    "Angular (v2+ to v20)",
     "TypeScript",
-    "Angular+2",
-    "Angular-Material",
-    "Rxjs",
+    "JavaScript (ES6+)",
+    "RxJS",
+    "HTML5",
+    "CSS3 / SASS",
+    "Angular Material",
     "TailwindCSS",
-    "Photoshop CC"
+    "NX Monorepo",
+    "Ag-Grid",
+    "ApexCharts",
+    "XLSX.js",
+    "Git",
+    "Azure DevOps",
+    "Docker (basic)"
   ],
   "professionalSkills": ["PWA", "Responsive Design", "Teamwork", "Scrum"],
   "languages": [
