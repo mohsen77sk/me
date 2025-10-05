@@ -2,14 +2,26 @@
   "name": "محسن سهرابی",
   "image": "assets/images/avatars/mohsen-sohrabi.jpg",
   "professionalTitle": "توسعه دهنده Front-End",
-  "about": "دارای بیش از 7 سال سابقه کار در زمینه طراحی وب اپلیکیشن با استفاده از HTML, CSS, JavaScript/TypeScript و فریم ورک Angular و کتاب خانه هایی ماننده ( AngularMaterial, SASS, Rxjs, Ag-Grid, ApexCharts, XLSX, TailwindCSS ). \nتسلط به ابزارهای مدیریت پروژه ماننده Jira, TFS و تسلط به ابزار مدیریت کد git. \nآشنا به مفهموم Monorepos و سابقه کار با فریم ورک NX.",
+  "about": "توسعه‌دهنده‌ی فرانت‌اند با بیش از 8 سال تجربه در طراحی و پیاده‌سازی وب‌اپلیکیشن‌ها با استفاده از Angular و TypeScript. تسلط کامل به HTML, CSS (SASS), RxJS و کتابخانه‌هایی مانند Angular Material، Ag-Grid و ApexCharts. آشنا با معماری Monorepo و ابزار NX، و دارای تجربه در کار با Git، Jira و Azure DevOps.",
   "workExperiences": [
+    {
+      "title": "Front-End Developer",
+      "place": "راهکار های جامع ارشن | تهران",
+      "employmentType": "تمام وقت",
+      "startDate": "اسفند 1403",
+      "endDate": "حالا",
+      "description": "",
+      "tasks": [
+        "تجربه‌ی کار بر روی پروژه سامانه کارگزاری بورس، شامل توسعه و بهینه‌سازی ماژول‌های مرتبط با معاملات.",
+        "تجربه ی پیاده سازی سرویس مدیریت سوکت چند سکویی و قابلیت سوییچ خودکار به سرویس پشتیبان."
+      ]
+    },
     {
       "title": "Front-End Developer",
       "place": "توسعه ی زیرساخت نیرو | تهران",
       "employmentType": "تمام وقت",
       "startDate": "بهمن 1402",
-      "endDate": "حالا",
+      "endDate": "بهمن 1403",
       "description": "",
       "tasks": [
         "تجربه ی نوشتن مستندات فنی، راهنماها، داکیومنت های مرتبط با پروژه‌.",
@@ -96,15 +108,21 @@
     }
   ],
   "technicalSkills": [
-    "HTML5",
-    "CSS3-SASS",
-    "JavaScript",
+    "Angular (v2+ to v20)",
     "TypeScript",
-    "Angular+2",
-    "Angular-Material",
-    "Rxjs",
+    "JavaScript (ES6+)",
+    "RxJS",
+    "HTML5",
+    "CSS3 / SASS",
+    "Angular Material",
     "TailwindCSS",
-    "Photoshop CC"
+    "NX Monorepo",
+    "Ag-Grid",
+    "ApexCharts",
+    "XLSX.js",
+    "Git",
+    "Azure DevOps",
+    "Docker (basic)"
   ],
   "professionalSkills": ["PWA", "Responsive Design", "Teamwork", "Scrum"],
   "languages": [
@@ -114,7 +132,7 @@
     },
     {
       "title": "انگلیسی",
-      "grade": "حرفه ای"
+      "grade": "Intermediate"
     }
   ],
   "contact": [
